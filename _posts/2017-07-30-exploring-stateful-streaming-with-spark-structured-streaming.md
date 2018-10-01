@@ -2,6 +2,9 @@
 layout: single
 title: Exploring Stateful Streaming with Spark Structured Streaming
 comments: true
+classes: narrow
+toc: true
+toc_label: Exploring Stateful Streaming with Spark Structured Streaming
 tags: [Scala, apache-spark, structured-streaming]
 ---
 
