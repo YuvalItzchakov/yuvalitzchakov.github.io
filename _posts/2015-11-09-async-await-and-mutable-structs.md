@@ -22,11 +22,11 @@ public class M
     }
 }
 
-public struct Structure
+public struct Structure 
 {
    private int value;
 
-   public Structure(int value)
+   public Structure(int value) 
    {
       this.value = value;
    }
