@@ -50,7 +50,7 @@ google:
   search_engine_id       : # YOUR_SEARCH_ENGINE_ID
   instant_search         : # false (default), true
 # SEO Related
-google_site_verification :
+google_site_verification : "cUin07i5LVKUYXkktoZLeEkXal5ugLMqZn9s_Lcxoqo"
 bing_site_verification   :
 yandex_site_verification :
 naver_site_verification  :
@@ -187,6 +187,7 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jemoji
+  - jekyll-seo-tag
 
 # mimic GitHub Pages with --safe
 whitelist:
