@@ -79,7 +79,7 @@ minimal_mistakes_skin: "air" # "air", "aqua", "contrast", "dark", "dirt", "neon"
 author:
   name             : "Yuval Itzchakov"
   avatar           : /assets/images/bio-photo.jpg # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : ""
+  bio              : "Building Solutions at Scale"
   location         : "Israel"
   email            : yuvalos@gmail.com
   links:
