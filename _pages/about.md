@@ -1,8 +1,8 @@
 ---
-layout: single
 title: Hi!
-permalink: /about/'
+permalink: /about/
 author_profile: true
+layout: single
 ---
 
 Thank you for visiting my site, I hope you find it useful :)
