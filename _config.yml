@@ -58,7 +58,7 @@ naver_site_verification  :
 # Social Sharing
 twitter:
   username               : YuvalItzchakov
-og_image                 : # Open Graph/Twitter default site image
+og_image                 : /assets/images/top-banner.jpeg
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
@@ -73,7 +73,7 @@ github: [metadata]
 markdown: kramdown
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 
-minimal_mistakes_skin: "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum" "sunrise"
+minimal_mistakes_skin: "contrast" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum" "sunrise"
 
 # Site Author
 author:
