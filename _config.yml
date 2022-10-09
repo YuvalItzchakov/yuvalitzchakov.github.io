@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 # Site Settings
 locale                   : "en-US"
-title                    : "Yuval Itzchakov's Blog"
+title                    : ""
 title_separator          : "-"
 name                     : "Yuval Itzchakov"
 description              : "Technical stuff, personal thoughts, all around good stuff"
