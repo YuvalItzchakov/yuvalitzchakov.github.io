@@ -14,7 +14,7 @@ The analysis in this blog is based on [`snowflake-ingest-java`](https://github.c
 
 # Introduction
 
-In this blog post, we are going to dive into the implementation details of Snowpipe Streaming. Snowpipe Streaming, as of the day of writing, supports to primary modes:
+In this blog post, we are going to dive into the implementation details of Snowpipe Streaming. Snowpipe Streaming, as of the day of writing, supports two primary modes:
 
 1. Java SDK 
 2. Kafka with Kafka Connect
