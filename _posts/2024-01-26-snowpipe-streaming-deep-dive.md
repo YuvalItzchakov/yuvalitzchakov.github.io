@@ -8,25 +8,6 @@ toc_label: Snowpipe Streaming Deep Dive
 tags: [snowflake, streaming, snowpipe]
 ---
 
-# Table of Contents
-
-- [Disclaimer](#disclaimer)
-- [Introduction](#introduction)
-- [Glossary](#glossary)
-- [High Level Design](#high-level-design)
-  * [Client](#client)
-  * [Channels](#channels)
-- [Diving Deeper](#diving-deeper)
-  * [From `insertRow(s)` to Snowflake table](#from-insertrows-to-snowflake-table)
-    + [Snowflake & PARQUET? Oh My!](#snowflake--parquet-oh-my)
-  * [Diving into Internal SDK Processing](#diving-into-internal-sdk-processing)
-    + [Channels & Row Buffers](#channels--row-buffers)
-      - [Parsing Java Objects to Parquet and Statistics Collection](#parsing-java-objects-to-parquet-and-statistics-collection)
-    + [Flushing the Data](#flushing-the-data)
-    + [Registering Blobs with Snowflake](#registering-blobs-with-snowflake)
-  * [Bonus: BdecParquetWriter and Internal Parquet Configuration](#bonus-bdecparquetwriter-and-internal-parquet-configuration)
-  * [Wrapping Up!](#wrapping-up)
-
 # Disclaimer
 
 The analysis in this blog is based on [`snowflake-ingest-java`](https://github.com/snowflakedb/snowflake-ingest-java/) version [`2.0.5`](https://github.com/snowflakedb/snowflake-ingest-java/tree/v2.0.5). Anything described in this blog is a result of reverse engineering the SDK, and is likely to change over time as the driver matures and evolves. We will already see a sneak peak and discuss some of the changes made from earlier versions of the SDK.
