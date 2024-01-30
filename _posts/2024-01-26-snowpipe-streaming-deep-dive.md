@@ -8,6 +8,8 @@ toc_label: Snowpipe Streaming Deep Dive
 tags: [snowflake, streaming, snowpipe]
 ---
 
+# Table of Contents
+
 - [Disclaimer](#disclaimer)
 - [Introduction](#introduction)
 - [Glossary](#glossary)
@@ -17,13 +19,12 @@ tags: [snowflake, streaming, snowpipe]
 - [Diving Deeper](#diving-deeper)
   * [From `insertRow(s)` to Snowflake table](#from-insertrows-to-snowflake-table)
     + [Snowflake & PARQUET? Oh My!](#snowflake--parquet-oh-my)
-  * [Diving into Row Processing](#diving-into-row-processing)
-    + [Channels, Schemas & Row Buffers](#channels-schemas--row-buffers)
-      - [Continue Strategy](#continue-strategy)
-      - [Abort Strategy](#abort-strategy)
-      - [Parsing Java to Parquet and Collecting Statistics](#parsing-java-to-parquet-and-collecting-statistics)
+  * [Diving into Internal SDK Processing](#diving-into-internal-sdk-processing)
+    + [Channels & Row Buffers](#channels--row-buffers)
+      - [Parsing Java Objects to Parquet and Statistics Collection](#parsing-java-objects-to-parquet-and-statistics-collection)
     + [Flushing the Data](#flushing-the-data)
     + [Registering Blobs with Snowflake](#registering-blobs-with-snowflake)
+  * [Bonus: BdecParquetWriter and Internal Parquet Configuration](#bonus-bdecparquetwriter-and-internal-parquet-configuration)
   * [Wrapping Up!](#wrapping-up)
 
 # Disclaimer
